@@ -6,6 +6,13 @@
         height: 40px;
         width: 120px;
         cursor: pointer;
+        transition: 0.15s;
+    }
+    .uber-button:hover {
+        opacity: 0.7;
+    }
+    .uber-button:active {
+        opacity: 0.4;
     }
     .amazon-button {
         margin-top: 15px;
@@ -15,7 +22,12 @@
         border: none;
         background-color: rgb(255, 216, 20);
         cursor: pointer;
+        transition: background-color 0.15s;
     }
+    .amazon-button:hover {
+        background-color: rgb(126, 106, 7);
+    }
+
     .github-button {
         margin-top: 15px;
         background-color: rgb(46,164,79);
@@ -27,6 +39,10 @@
         font-weight: bold;
         font-size: 14px;
         cursor: pointer;
+        transition: box shadow 0.15s;
+    }
+    .github-button:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
     }
     .bootstrap-get-started {
         margin-top: 20px;
@@ -39,6 +55,10 @@
         width: 110px;
         font-weight: bold;
         cursor: pointer;
+        transition: background-color 0.15s;
+    }
+    .bootstrap-get-started:hover{
+        background-color: rgb(107, 22, 233);
     }
     .bootstrap-donwload {
         margin-top: 20px;
@@ -52,7 +72,12 @@
         margin-left: 8px;
         font-weight: bold;
         cursor: pointer;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        transition: background-color 0.15s, color 0.15s;
+    }
+    .bootstrap-donwload:hover{
+        background-color: rgb(108, 117, 125);
+        color: white;
     }
     .linkedin-button {
         height: 36px;
@@ -63,6 +88,10 @@
         color: white;
         font-weight: bold;
         cursor: pointer;
+        transition: background-color 0.15s;
+    }
+    .linkedin-button:hover{
+        background-color: rgb(8, 67, 126);
     }
     .linkedin-save-button {
         height: 36px;
@@ -75,6 +104,9 @@
         font-weight: bold;
         cursor: pointer;
         margin-left: 8px;
+    }
+    .linkedin-save-button:hover{
+        border-width: 2px;
     }
 </style>
 
