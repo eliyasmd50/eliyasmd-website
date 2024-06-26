@@ -1,4 +1,4 @@
-<style>
+
     .button-pagination {
         padding: 9px 14px 9px 14px;
         margin: 5px;
@@ -39,24 +39,4 @@
     .hover-buttons:hover {
         padding: 10px 30px 10px 30px;
     }
-</style>
 
-<button class="button-pagination">Back</button>
-<a href="#" target="_blank">1</a>
-<a href="#" target="_blank">2</a>
-<a href="#" target="_blank">3</a>
-<a href="#" target="_blank">4</a>
-<a href="#" target="_blank">5</a>
-<button class="button-pagination">Next</button>
-
-
-
-<button class="stretch-button">Stretch</button>
-
-
-
-<button class="three-d-click">Shadow</button>
-
-<button class="hover-buttons">One</button>
-<button class="hover-buttons">Two</button>
-<button class="hover-buttons">Three</button>

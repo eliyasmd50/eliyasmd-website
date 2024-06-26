@@ -1,0 +1,25 @@
+p {
+    margin-top: 0;
+    font-family: arial;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.title {
+    margin-bottom: 10px;
+}
+.name {
+    font-weight: bold;
+}
+.at {
+    color: grey;
+}
+.description {
+    margin-bottom: 18px;
+    width: 600px;
+}
+.website {
+    color: blue;
+}
+.website:hover {
+    text-decoration: underline;
+}
