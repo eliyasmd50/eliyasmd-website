@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    .profile {
+        width: 250px;
+        display: inline-block;
+    }
+    .thumbnail {
+        width: 250px;
+        margin-bottom: 12px;
+    }
+    .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .mutual-friends {
+        width: 250px;
+        display: inline-block;
+    }
+    .profile-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        display: inline-block;
+        object-fit: cover;
+        object-position: top;
+        vertical-align: middle;
+    }
+    .mutual-friends-list {
+        display: inline-block;
+        padding-left: 10px;
+    }
+</style>
+
+<body>
+    <div class="profile">
+        <img  class="thumbnail" src="../../../assets/img/cat-image.png">
+        <p class="name">Oliver</p>
+        <div class="mutual-friends">
+            <img src="../../../assets/img/Batman_canvas.jpg" class="profile-image">
+            <p class="mutual-friends-list">2 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+    </div>
+</body>
+
+</html>
