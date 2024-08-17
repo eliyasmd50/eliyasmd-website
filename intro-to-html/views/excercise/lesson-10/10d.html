@@ -20,9 +20,14 @@
     .profile {
         width: 250px;
         display: inline-block;
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+        margin-left: 10px;
+        margin-right: 10px;
+        vertical-align: top;
     }
     .thumbnail {
         width: 250px;
+        height: 250px;
         margin-bottom: 12px;
     }
     .name {
@@ -33,6 +38,7 @@
     .mutual-friends {
         width: 250px;
         display: inline-block;
+        margin-bottom: 10px;
     }
     .profile-image {
         width: 50px;
@@ -47,11 +53,42 @@
         display: inline-block;
         padding-left: 10px;
     }
+    .add-friend {
+        padding: 10px 15px 10px 15px;
+        font-size: 15px;
+        background-color: rgb(34, 153, 244);
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .name, .mutual-friends, .add-friend {
+        margin-left: 10px;
+    }
 </style>
 
 <body>
     <div class="profile">
         <img  class="thumbnail" src="../../../assets/img/cat-image.png">
+        <p class="name">Oliver</p>
+        <div class="mutual-friends">
+            <img src="../../../assets/img/Batman_canvas.jpg" class="profile-image">
+            <p class="mutual-friends-list">2 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+    </div>
+    <div class="profile">
+        <img  class="thumbnail" src="../../../assets/img/cat-image1.webp">
+        <p class="name">Oliver</p>
+        <div class="mutual-friends">
+            <img src="../../../assets/img/Batman_canvas.jpg" class="profile-image">
+            <p class="mutual-friends-list">2 mutual friends</p>
+        </div>
+        <button class="add-friend">Add Friend</button>
+    </div>
+    <div class="profile">
+        <img  class="thumbnail" src="../../../assets/img/cat-image2.jpeg">
         <p class="name">Oliver</p>
         <div class="mutual-friends">
             <img src="../../../assets/img/Batman_canvas.jpg" class="profile-image">
