@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13a</title>
+  <style>
+    .items {
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+    }
+    .item1 {
+      background-color: lightblue;
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .item2 {
+      background-color: lightpink;
+      width: 200px;
+    }
+    .nested-item {
+      background-color: black;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="items">
+    <div class="item1">
+      <div class="nested-item">Item1</div>
+    </div>
+    <div class="item2"></div>
+  </div>
+</body>
+</html>
