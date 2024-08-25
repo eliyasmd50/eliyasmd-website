@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .items {
+      display: flex;
+      flex-direction: row;
+    }
+    .profile-image {
+      width: 80px;
+    }
+    .profile-icon {
+      width: 60px;
+      border-radius: 30px;
+    }
+    .tweet {
+      width: 350px;
+      line-height: 22px;
+    }
+    .profile-user {
+      display: flex;
+    }
+    .user-name {
+      flex: 2;
+      font-weight: bold;
+    }
+    .user-handle {
+      flex: 3;
+      color: gray;
+    }
+    .tweet-content {
+      margin-bottom: 10px;
+    }
+    .tweet-content-link {
+      display: flex;
+      height: 100px;
+      border-radius: 18px;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+    }
+    .video-preview {
+      width: 100px;
+      background-color: gray;
+      border-top-left-radius: 18px;
+      border-bottom-left-radius: 18px;
+    }
+    .video-info {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: center;
+    }
+    .video-domain {
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="items">
+    <div class="profile-image">
+      <img src="../../../assets/img/cat-image.png" class="profile-icon">
+    </div>
+    <div class="tweet">
+      <div class="profile-user">
+        <div class="user-name">Mohamed Eliyas</div>
+        <div class="user-handle">@eliyasmd</div>
+      </div>
+      <div class="tweet-content">
+        What is backend development? A complete overview. New video is up!
+      </div>
+      <div class="tweet-content-link">
+        <div class="video-preview"></div>
+        <div class="video-info">
+          <div class="video-domain">youtube.com</div>
+          <div class="video-description">Backend web development - a complete overview (2021)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

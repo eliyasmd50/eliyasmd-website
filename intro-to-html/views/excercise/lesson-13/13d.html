@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .notifications {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 4px;
+      padding: 20px;
+      width: 500px;
+      border: none;
+      box-shadow: inset 0px 0px 5px rgba(0,0,0,0.25);
+    }
+
+    .section-heading,
+    .section-notification {
+      margin-bottom: 20px;
+    }
+
+    .section-notification {
+      display: flex;
+      flex-direction: row;
+      border-width: 2px;
+    }
+
+    .image {
+      width: 80px;
+    }
+
+    .profile-image {
+      width: 60px;
+      border-radius: 30px;
+
+    }
+
+    .notification-info {
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+
+    .promo-type {
+      font-weight: bold;
+      font-size: 20px;
+
+    }
+
+    .promo-moto {
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .promo-brief {
+      font-size: 15px;
+      display: block;
+      color: gray;
+    }
+
+    .notification-time {
+      display: flex;
+      color: gray;
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="notifications">
+    <div class="section-heading">ALL INBOXES</div>
+    <div class="section-notification">
+      <div class="image">
+        <img class="profile-image" src="../../../assets/img/cat-image.png">
+      </div>
+      <div class="notification-info">
+        <div class="promo-type">Chewy Promotions</div>
+        <div class="promo-moto">Biggest sales of the year!</div>
+        <div class="promo-brief">Hey there! we're writing to tell you about our biggest sale of the year</div>
+      </div>
+      <div class="notification-time">4:58 PM</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
