@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14f</title>
+  <style> 
+    body{
+      height: 3000px;
+    }
+    .left-sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top:0;
+      bottom:0;
+      left:0;
+      width: 100px;
+      background-color: rgb(55, 55, 55);
+      padding-top: 20px;
+    }
+    .profile-images {
+      width: 80px;
+      border-radius: 50px;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+    .sidebar-info {
+      padding-left: 15px;
+      padding-top: 15px;
+      padding-right: 15px;
+      position:fixed;
+      top: 0;
+      bottom:0;
+      left: 100px;
+      width: 250px;
+      background-color: rgb(33, 33, 33);
+      display: flex;
+      flex-direction: column;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hashtags {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px;
+      color: rgb(150,150,150);
+    }
+    .add-icon {
+      font-size: 25px;
+      color: rgb(150,150,150);
+      cursor:pointer;
+    }
+    .name {
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-sidebar">
+    <img src="../../../assets/img/cat-image.png" alt="" class="profile-images">
+    <img src="../../../assets/img/cat-image1.webp" alt="" class="profile-images">
+    <img src="../../../assets/img/cat-image2.jpeg" alt="" class="profile-images">
+  </div>
+  <div class="sidebar-info">
+    <div class="info">
+      <div class="name">INFO</div>
+      <div class="add-icon">+</div>
+    </div>
+    <div class="hashtags"> # new-videos</div>
+    <div class="hashtags"> # updates</div>
+    <div class="hashtags"># FAQ</div>
+  </div>
+</body>
+</html>

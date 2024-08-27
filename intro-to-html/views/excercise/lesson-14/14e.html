@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14e</title>
+  <style>
+    body{
+      padding-bottom: 3000px;
+      background-color: gray;
+    }
+    .header-section {
+      position: fixed;
+      background-color: #fff;
+      top:0;
+      left:0;
+      right:0;
+      height: 70px;
+      display: flex;
+      padding: 3px 60px 3px 60px;
+      justify-content: space-between;
+    }
+    .fb-profile {
+      display: flex;
+      align-items: center;
+    }
+    .profile {
+      width: 100px;
+    }
+    .profile-image {
+      width: 60px;
+      border-radius: 30px;
+      padding-top: 3px;
+    }
+    .profile-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .fb-toggle {
+      display: flex;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .add-friend {
+      width: 130px;
+      
+    }
+    .add-frined-list {
+      padding: 8px 12px 8px 12px;
+      background-color: rgb(52, 123, 255);
+      font-size: 16px;
+      font-weight: bold;
+      color:#fff;
+      border:none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .message {
+      width: 130px;
+    }
+    .message-toggle {
+      padding: 8px 14px 8px 14px;
+      background-color: rgb(215, 215, 215);
+      border-radius: 4px;
+      border: none;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-section">
+    <div class="fb-profile">
+      <div class="profile"><img src="../../../assets/img/cat-image.png" alt="" class="profile-image"></div>
+      <div class="profile-name">Oliver cat</div>
+    </div>
+    <div class="fb-toggle">
+      <div class="add-friend"><button class="add-frined-list">Add Friend</button></div>
+      <div class="message"><button class="message-toggle">Message</button></div>
+    </div>
+  </div>
+</body>
+</html>
