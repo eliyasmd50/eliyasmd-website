@@ -4,8 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    body {
+      font-family: Sohne, sans-serif;
+      height: 3000px;
+    }
+    .chat-bot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0);
+      cursor: pointer;
+      z-index: 1000px;
+    }
+    .chat-icon {
+      width: 120px;
+    }
+
+    .chat-popup {
+      display: none;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      border-radius: 4px;
+      z-index: 100;
+    }
+    .chat-form-container {
+      height: 450px;
+      width: 400px;
+      border: none;
+      background-color: #fff;
+      border-radius: 8px;
+      color: rgb(0, 95, 236);
+      font-family: Roboto, sans-serif;
+      padding: 15px;
+      box-shadow: 0px 1px 1px 2px rgba(0,0,0,0.15);
+    }
+
+    .chat-form-header {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    .chat-heading {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .chat-close-button {
+      color: rgb(0, 95, 236);
+      background-color: #fff;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  </style>
 </head>
 <body>
+
+  <a href="#" onclick="openChat(); return false;" class="chat-bot" id="open-chat">
+    <img src="/Chat-Choose.avif" alt="chat with us" class="chat-icon">
+  </a>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/" class="chat-form-container">
+      <div class="chat-form-header">
+        <div class="chat-heading">We're Offline </div>
+        <button type="button" class="chat-close-button" onclick="closeForm()">X</button>
+      </div>
+
+      <div style="margin-top: 200px; margin-left: 20px;"><label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea></div>
+    </form>
+  </div>
+
+  <script>
+    function openChat() {
+      $('#myForm').css('display', 'block');  
+      $('#open-chat').css('display', 'none');
+  }
   
+  function closeForm() {
+      $('#myForm').css('display', 'none');   
+      $('#open-chat').css('display', 'block');
+  }
+
+
+  </script>
 </body>
 </html>
